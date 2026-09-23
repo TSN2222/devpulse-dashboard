@@ -133,7 +133,61 @@
         </div>
       </section>
 
-      <section id="calculator" class="section-container"></section>
+      <section id="calculator" class="section-container">
+        <header class="section-header">
+          <h2 class="section-title">
+            Find the Right Cluster for Your Workload
+          </h2>
+          <p class="section-subtitle">
+            Enter your infrastructure requirements to determine which DevPulse
+            tier best fits your workload.
+          </p>
+        </header>
+        <form action="#" method="post" id="calculator-form">
+          <div class="form-group">
+            <label for="node-count" class="form-label">
+              Node Count <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="number"
+              name="nodeCount"
+              id="node-count"
+              min="1"
+              max="1000"
+              step="1"
+              placeholder="100"
+              aria-describedby="node-count-hint"
+              required
+            />
+            <span id="node-count-hint" class="input-hint"
+              >Min: 1 - Max: 1,000</span
+            >
+          </div>
+          <div class="form-group">
+            <label for="log-throughput" class="form-label">
+              Log Throughput
+              <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="number"
+              name="logThroughput"
+              id="log-throughput"
+              min="1"
+              max="1000"
+              step="1"
+              placeholder="100"
+              aria-describedby="log-throughput-hint"
+              required
+            />
+            <span id="log-throughput-hint" class="input-hint"
+              >Min: 1 - Max: 1,000</span
+            >
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Check Tier Compatibility
+          </button>
+        </form>
+      </section>
 
       <section id="register" class="section-container"></section>
     </main>
