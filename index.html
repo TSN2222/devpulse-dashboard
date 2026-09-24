@@ -189,7 +189,56 @@
         </form>
       </section>
 
-      <section id="register" class="section-container"></section>
+      <section id="register" class="section-container">
+        <header class="section-header">
+          <h2 class="section-title">Get Started with DevPulse</h2>
+          <p class="section-subtitle">
+            Register your contact information to receive API sandbox
+            provisioning details.
+          </p>
+        </header>
+        <form action="#" method="post" id="register-form">
+          <div class="form-group">
+            <label for="user-first" class="form-label">
+              First Name <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              name="userFirst"
+              id="user-first"
+              placeholder="John"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="user-last" class="form-label">
+              Last Name <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              name="userLast"
+              id="user-last"
+              placeholder="Smith"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="user-email" class="form-label">
+              Email <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="email"
+              name="userEmail"
+              id="user-email"
+              placeholder="email@example.com"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Request API Sandbox
+          </button>
+        </form>
+      </section>
     </main>
 
     <footer id="site-footer">
