@@ -1,0 +1,35 @@
+:root {
+  --color-bg: #000000;
+  --color-surface: #2f1000;
+  --color-surface-alt: #621b00;
+  --color-accent-primary: #c75000;
+  --color-accent-secondary: #945600;
+
+  --color-text: #ffffff;
+  --color-text-muted: #d6d6d6;
+
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
