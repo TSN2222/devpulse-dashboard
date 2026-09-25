@@ -11,11 +11,12 @@
 
   --color-text: #f8fafc;
   --color-text-muted: #cbd5e1;
+  --color-text-logo: #f87171;
 
   --font-heading: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
 
-  --transition-speed: 0.15s;
+  --transition-speed: 0.3s;
 }
 
 *,
@@ -45,11 +46,15 @@ input {
   font: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   display: inline-block;
   font-size: 1rem;
   font-weight: 600;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
   border: 1px solid transparent;
   border-radius: 5px;
   text-decoration: none;
@@ -83,4 +88,61 @@ input {
 
 .btn-secondary:hover {
   background-color: var(--color-surface-alt);
+}
+
+#site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.8rem;
+  background-color: var(--color-bg);
+  border-bottom: 1.5px solid var(--color-border);
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  transition: color var(--transition-speed);
+}
+
+.site-logo:hover {
+  color: var(--color-text-logo);
+}
+
+.logo-icon {
+  color: var(--color-text-logo);
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  text-decoration: overline transparent;
+  transition:
+    color var(--transition-speed),
+    text-decoration var(--transition-speed);
+}
+
+.nav-link:hover {
+  color: var(--color-accent-primary);
+  text-decoration-color: var(--color-accent-primary);
+}
+
+.nav-divide {
+  font-size: 1.4rem;
+  font-weight: 350;
+  color: var(--color-text-muted);
 }
