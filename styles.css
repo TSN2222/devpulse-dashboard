@@ -14,6 +14,8 @@
 
   --font-heading: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
+
+  --transition-speed: 0.15s;
 }
 
 *,
@@ -36,4 +38,49 @@ h1,
 h2,
 h3 {
   font-family: var(--font-heading);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-speed),
+    transform var(--transition-speed),
+    border-color var(--transition-speed);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-accent-primary);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background-color: var(--color-accent-primary);
+  color: var(--color-on-accent);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-input-border);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-surface-alt);
 }
