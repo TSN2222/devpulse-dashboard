@@ -57,6 +57,7 @@ a {
   padding: 0.5rem 1.5rem;
   border: 1px solid transparent;
   border-radius: 5px;
+  min-width: 203px;
   text-decoration: none;
   cursor: pointer;
   transition:
@@ -146,6 +147,28 @@ a {
 .nav-divide {
   font-size: 1.4rem;
   font-weight: 350;
+  color: var(--color-text-muted);
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.section-subtitle {
   color: var(--color-text-muted);
 }
 
