@@ -146,3 +146,37 @@ a {
   font-weight: 350;
   color: var(--color-text-muted);
 }
+
+#site-footer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1rem 1.8rem;
+  border-top: 1.5px solid var(--color-border);
+}
+
+#site-footer .site-logo {
+  justify-self: start;
+}
+
+#footer-copy {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+#footer-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-self: end;
+}
+
+.footer-link {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
