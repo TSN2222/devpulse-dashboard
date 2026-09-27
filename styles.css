@@ -78,7 +78,7 @@ a {
 
 .btn-primary:hover {
   background-color: var(--color-accent-hover);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
@@ -208,7 +208,8 @@ a {
   gap: 1.5rem;
 }
 
-.features-card {
+.features-card,
+.tier-card {
   flex: 1 1 280px;
   text-align: center;
   padding: 1.5rem;
@@ -233,6 +234,68 @@ a {
 
 .feature-desc {
   color: var(--color-text-muted);
+}
+
+#tiers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.tier-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: space-between;
+  transition: transform var(--transition-speed);
+}
+
+.tier-card:hover {
+  transform: translateY(-8px);
+}
+
+#featured-tier {
+  position: relative;
+  border: 1px solid var(--color-accent-primary);
+}
+
+#popular-tier-label {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.25rem 1rem;
+  border-radius: 999px;
+  background-color: var(--color-accent-primary);
+  color: var(--color-on-accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.tier-title {
+  font-size: 1.25rem;
+  color: var(--color-text);
+}
+
+.tier-desc {
+  color: var(--color-text-muted);
+}
+
+.tier-features {
+  align-self: center;
+  text-align: left;
+  padding-left: 1.25rem;
+  color: var(--color-text-muted);
+}
+
+.tier-features li + li {
+  margin-top: 0.5rem;
+}
+
+.tier-features li::marker {
+  color: var(--color-accent-primary);
 }
 
 #site-footer {
