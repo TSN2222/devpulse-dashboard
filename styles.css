@@ -55,6 +55,8 @@ a {
   text-decoration: none;
 }
 
+/* SITE BUTTONS STYLING */
+
 .btn {
   display: inline-block;
   font-size: 1rem;
@@ -90,6 +92,8 @@ a {
 .btn-secondary:hover {
   background-color: var(--color-surface-alt);
 }
+
+/* SITE HEADER STYLING */
 
 #site-header {
   position: sticky;
@@ -154,6 +158,8 @@ a {
   justify-self: end;
 }
 
+/* UNIVERSAL SECTION STYLING */
+
 .section-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -175,6 +181,8 @@ a {
 .section-subtitle {
   color: var(--color-text-muted);
 }
+
+/* HERO SECTION STYLING */
 
 #hero {
   display: flex;
@@ -201,6 +209,8 @@ a {
   justify-content: center;
   gap: 1rem;
 }
+
+/* FEATURE SECTION STYLING */
 
 #features-grid {
   display: flex;
@@ -235,6 +245,8 @@ a {
 .feature-desc {
   color: var(--color-text-muted);
 }
+
+/* TIER SECTION STYLING */
 
 #tiers-grid {
   display: flex;
@@ -298,6 +310,8 @@ a {
   color: var(--color-accent-primary);
 }
 
+/* CALCULATOR AND REGISTER SECTION STYLING */
+
 form {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -360,6 +374,8 @@ form > .btn {
   font-size: 0.85rem;
   color: var(--color-text-muted);
 }
+
+/* SITE FOOTER STYLING */
 
 #site-footer {
   display: grid;
