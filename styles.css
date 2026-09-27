@@ -27,6 +27,11 @@
   margin: 0;
 }
 
+*:focus-visible {
+  outline: 2px solid var(--color-accent-primary);
+  outline-offset: 2px;
+}
+
 html {
   scroll-behavior: smooth;
   font-family: var(--font-body);
@@ -64,11 +69,6 @@ a {
     background-color var(--transition-speed),
     transform var(--transition-speed),
     border-color var(--transition-speed);
-}
-
-.btn:focus-visible {
-  outline: 2px solid var(--color-accent-primary);
-  outline-offset: 2px;
 }
 
 .btn-primary {
@@ -296,6 +296,69 @@ a {
 
 .tier-features li::marker {
   color: var(--color-accent-primary);
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: auto;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background-color: var(--color-surface);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group-full,
+form > .btn {
+  grid-column: 1 / -1;
+}
+
+form > .btn {
+  min-height: 50px;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.form-input {
+  min-height: 50px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-input-border);
+  border-radius: 8px;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  color-scheme: dark;
+  transition: border-color var(--transition-speed);
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--color-accent-primary);
+}
+
+.form-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.required-mark {
+  color: var(--color-accent-primary);
+}
+
+.input-hint {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
 }
 
 #site-footer {
